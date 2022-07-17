@@ -1,7 +1,7 @@
 .import pymysql
-.conn = pymysql.connect(host='localhost',user='root',password="root",db="test")
+.conn = pymysql.connect(host='localhost',user='root',password="jntuhcse",db="sakila")
 .curr = conn.cursor()
-.curr.execute("SELECT * FROM Customers")
+.curr.execute("show tables;")
 .for x in curr :
 .    print(x)
 # out = curr.fetchall()
